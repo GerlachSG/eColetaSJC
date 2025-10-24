@@ -1,0 +1,354 @@
+/* --- Variáveis de Cor e Configurações Globais --- */
+:root {
+    --cor-fundo: #E3EEE3; /* Branco-cinza-claro levemente esverdeado */
+    --cor-verde-principal: #0F7F67;
+    --cor-verde-escuro: #264653;
+    --cor-texto-principal: #000000;
+    --cor-texto-secundario: #181818; /* Cinza escuro */
+    --cor-branca: #ffffff;
+    --cor-borda: #e0e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+    line-height: 1.6;
+}
+
+/* --- Cabeçalho e Logo --- */
+.main-header{
+    display: flex;
+    justify-content: center;
+}
+
+.main-header img{
+    padding: 20px;
+    width: 250px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cor-verde-escuro);
+}
+
+/* --- Conteúdo da Homepage --- */
+.homepage-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 15px; 
+}
+
+.placeholder-image {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.placeholder-image img{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.2rem;
+    color: var(--cor-texto-principal);
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: var(--cor-texto-secundario);
+    max-width: 260px; /* Limita a largura em telas maiores */
+}
+
+.label-comecar {
+    font-size: 0.9rem;
+    color: var(--cor-texto-secundario);
+    margin-top: 20px;
+}
+
+/* --- Estilos de Botões --- */
+.btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-green {
+    background-color: var(--cor-verde-principal);
+    color: var(--cor-branca);
+}
+
+.btn-green:hover {
+    background-color: #248a7d;
+}
+
+.btn-dark-green {
+    background-color: var(--cor-verde-escuro);
+    color: var(--cor-branca);
+}
+
+.btn-dark-green:hover {
+    background-color: #1e3842;
+}
+
+.btn-full {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--cor-verde-principal);
+    color: var(--cor-branca);
+}
+
+.btn-full:hover {
+    background-color: #e0e0e0;
+}
+
+/* --- Modal (Tela que Sobe) --- */
+#modal-sheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh; /* 85% da altura da tela */
+    background-color: var(--cor-branca);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+    
+    /* Começa escondido abaixo da tela */
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 100;
+
+    /* Para o scroll interno */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estado Ativo: Modal visível */
+#modal-sheet.active {
+    transform: translateY(0);
+}
+
+/* Alça do Modal */
+#modal-handle {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.handle-bar {
+    width: 60px;
+    height: 3px;
+    background-color: #959595;
+    border-radius: 3px;
+}
+
+/* Conteúdo Interno do Modal */
+.modal-content {
+    padding: 0 25px 25px 25px;
+    flex-grow: 1; /* Faz o conteúdo ocupar o espaço restante */
+    overflow-y: auto; /* Permite scroll se o conteúdo for maior */
+}
+
+.modal-view {
+    display: block; /* Por padrão é visível */
+}
+
+.modal-view.hidden {
+    display: none; /* Classe JS para esconder telas */
+}
+
+/* Telas do Modal */
+.modal-title {
+    font-size: 1.1rem;
+    color: var(--cor-texto-principal);
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 35px;
+    font-weight: bold;
+}
+
+.view-title {
+    font-size: 1.5rem;
+    color: var(--cor-texto-principal);
+    margin-bottom: 25px;
+}
+
+.option-block {
+    margin-bottom: 25px;
+}
+
+.option-block label {
+    display: block;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 8px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* --- Formulários --- */
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre grupos de formulário */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: var(--cor-texto-secundario);
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Estilo do placeholder "Selecione" */
+.form-group select:invalid {
+    color: var(--cor-texto-secundario);
+}
+
+/* Botões de Atalho */
+.shortcuts {
+    display: flex;
+    flex-wrap: wrap; /* Quebra a linha se não couber */
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.shortcut-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    background-color: #e6f5f3; /* Verde bem claro */
+    color: var(--cor-verde-principal);
+    border: 1px solid var(--cor-verde-principal);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* --- Tela de Resultado --- */
+.resultado-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.coleta-info {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+}
+
+.coleta-info h3 {
+    font-size: 1.1rem;
+    color: var(--cor-texto-principal);
+}
+
+.coleta-horario {
+    font-size: 1rem;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 10px;
+}
+
+.coleta-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.map-container {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que o iframe respeite a borda */
+    border: 1px solid var(--cor-borda);
+    
+    /* --- ATUALIZAÇÃO --- */
+    /* Garante que o DIV do mapa tenha altura */
+    min-height: 250px; 
+}
+
+/* --- ATUALIZAÇÃO --- */
+/* Estilo para o mapa de busca, que é maior */
+#mapa-busca {
+    min-height: 400px;
+}
+
+
+.btn-rota {
+    margin-top: 10px;
+}
+
+
+/* --- Responsividade (Desktop) --- */
+/* Estilos para telas maiores (ex: tablets e desktops) */
+@media (min-width: 768px) {
+    
+    /* Centraliza o conteúdo principal */
+    .homepage-content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* O modal vira uma folha mais estreita no centro */
+    #modal-sheet {
+        width: 100%;
+        max-width: 600px; /* Largura máxima em telas grandes */
+        height: 85vh; /* Pode diminuir um pouco a altura */
+        left: 50%;
+        transform: translate(-50%, 100%); /* Centraliza e esconde */
+        border-radius: 20px; /* Arredonda todos os cantos */
+    }
+
+    #modal-sheet.active {
+        transform: translate(-50%, 0); /* Centraliza e mostra */
+    }
+
+    .modal-content {
+        padding: 0 40px 40px 40px;
+    }
+}
+
+/* --- ATUALIZAÇÃO --- */
+/* Estilo para o botão de filtro selecionado */
+.shortcut-btn.selected {
+    background-color: var(--cor-verde-principal);
+    color: var(--cor-branca);
+    font-weight: bold;
+}

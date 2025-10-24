@@ -1,0 +1,203 @@
+{
+  "coleta": {
+    "jardim-satelite": {
+      "dias": "Segunda, Quarta e Sexta",
+      "periodo": "Manhã (a partir das 7h30)"
+    },
+    "bosque-eucaliptos": {
+      "dias": "Terça, Quinta e Sábado",
+      "periodo": "Manhã (a partir das 7h30)"
+    },
+    "vila-ema": {
+      "dias": "Terça, Quinta e Sábado",
+      "periodo": "Manhã (a partir das 7h30)"
+    },
+    "jardim-aquarius": {
+      "dias": "Terça, Quinta e Sábado",
+      "periodo": "Noite (a partir das 19h)"
+    },
+    "urbanova": {
+      "dias": "Terça e Sexta",
+      "periodo": "Manhã (a partir das 7h30)"
+    },
+    "centro": {
+      "dias": "Segunda a Sábado",
+      "periodo": "Manhã (a partir das 7h30)"
+    },
+    "campos-sao-jose": {
+      "dias": "Quinta-feira",
+      "periodo": "Manhã (a partir das 7h30)"
+    },
+    "vista-verde": {
+      "dias": "Sexta-feira",
+      "periodo": "Manhã (a partir das 7h30)"
+    }
+  },
+  "locais": [
+    {
+      "nome": "PEV Campo dos Alemães",
+      "endereco": "Avenida dos Evangélicos, 601, Campo dos Alemães",
+      "regiao": "Sul",
+      "horario": "Segunda a Sábado: 8h às 17h. Domingo: 8h às 12h.",
+      "observacoes": "Limite de 1m³ (um metro cúbico) para entulho e podas.",
+      "lat": -23.26871,
+      "lng": -45.91834,
+      "tipos": ["Entulho", "Gesso", "Móveis", "Equipamentos Domésticos", "Eletrônico", "Pilhas e Baterias", "Lâmpadas", "Poda e Jardinagem", "Madeira", "Pneus", "Óleo de Cozinha", "Recicláveis", "Espelho", "Têxteis", "Mídia"],
+      "nao_aceita": ["Lixo Orgânico", "Lixo Hospitalar", "Animais Mortos", "Químicos", "Terra e Areia"]
+    },
+    {
+      "nome": "PEV Dom Pedro 2º",
+      "endereco": "Rua Trinta e Sete, 130, Conj. Hab. Dom Pedro II",
+      "regiao": "Sul",
+      "horario": "Segunda a Sábado: 8h às 17h. Domingo: 8h às 12h.",
+      "observacoes": "Limite de 1m³ (um metro cúbico) para entulho e podas.",
+      "lat": -23.23812,
+      "lng": -45.89965,
+      "tipos": ["Entulho", "Gesso", "Móveis", "Equipamentos Domésticos", "Eletrônico", "Pilhas e Baterias", "Lâmpadas", "Poda e Jardinagem", "Madeira", "Pneus", "Óleo de Cozinha", "Recicláveis", "Espelho", "Têxteis", "Mídia"],
+      "nao_aceita": ["Lixo Orgânico", "Lixo Hospitalar", "Animais Mortos", "Químicos", "Terra e Areia"]
+    },
+    {
+      "nome": "PEV Residencial Gazzo",
+      "endereco": "Rua Arcílio Moreira da Silva (ao lado do cemitério Colônia Paraíso), Residencial Gazzo",
+      "regiao": "Sul",
+      "horario": "Segunda a Sábado: 8h às 17h. Domingo: 8h às 12h.",
+      "observacoes": "Limite de 1m³ (um metro cúbico) para entulho e podas.",
+      "lat": -23.24215,
+      "lng": -45.90387,
+      "tipos": ["Entulho", "Gesso", "Móveis", "Equipamentos Domésticos", "Eletrônico", "Pilhas e Baterias", "Lâmpadas", "Poda e Jardinagem", "Madeira", "Pneus", "Óleo de Cozinha", "Recicláveis", "Espelho", "Têxteis", "Mídia"],
+      "nao_aceita": ["Lixo Orgânico", "Lixo Hospitalar", "Animais Mortos", "Químicos", "Terra e Areia"]
+    },
+    {
+      "nome": "PEV 31 de Março",
+      "endereco": "Rua Guidoval, 100, Conj. Hab. Trinta e Um de Março",
+      "regiao": "Sul",
+      "horario": "Segunda a Sábado: 8h às 17h. Domingo: 8h às 12h.",
+      "observacoes": "Limite de 1m³ (um metro cúbico) para entulho e podas.",
+      "lat": -23.23126,
+      "lng": -45.87979,
+      "tipos": ["Entulho", "Gesso", "Móveis", "Equipamentos Domésticos", "Eletrônico", "Pilhas e Baterias", "Lâmpadas", "Poda e Jardinagem", "Madeira", "Pneus", "Óleo de Cozinha", "Recicláveis", "Espelho", "Têxteis", "Mídia"],
+      "nao_aceita": ["Lixo Orgânico", "Lixo Hospitalar", "Animais Mortos", "Químicos", "Terra e Areia"]
+    },
+    {
+      "nome": "PEV Jardim Satélite",
+      "endereco": "Rua Estrela Dalva, 135, Jardim Satélite",
+      "regiao": "Sul",
+      "horario": "Segunda a Sábado: 8h às 17h. Domingo: 8h às 12h.",
+      "observacoes": "Limite de 1m³ (um metro cúbico) para entulho e podas.",
+      "lat": -23.23234,
+      "lng": -45.91384,
+      "tipos": ["Entulho", "Gesso", "Móveis", "Equipamentos Domésticos", "Eletrônico", "Pilhas e Baterias", "Lâmpadas", "Poda e Jardinagem", "Madeira", "Pneus", "Óleo de Cozinha", "Recicláveis", "Espelho", "Têxteis", "Mídia"],
+      "nao_aceita": ["Lixo Orgânico", "Lixo Hospitalar", "Animais Mortos", "Químicos", "Terra e Areia"]
+    },
+    {
+      "nome": "PEV Interlagos",
+      "endereco": "Rua Ubirajara Raimundo de Souza, 21, Parque Interlagos",
+      "regiao": "Sul",
+      "horario": "Segunda a Sábado: 8h às 17h. Domingo: 8h às 12h.",
+      "observacoes": "Limite de 1m³ (um metro cúbico) para entulho e podas.",
+      "lat": -23.24355,
+      "lng": -45.89437,
+      "tipos": ["Entulho", "Gesso", "Móveis", "Equipamentos Domésticos", "Eletrônico", "Pilhas e Baterias", "Lâmpadas", "Poda e Jardinagem", "Madeira", "Pneus", "Óleo de Cozinha", "Recicláveis", "Espelho", "Têxteis", "Mídia"],
+      "nao_aceita": ["Lixo Orgânico", "Lixo Hospitalar", "Animais Mortos", "Químicos", "Terra e Areia"]
+    },
+    {
+      "nome": "PEV Galo Branco",
+      "endereco": "Avenida Benedito Luiz de Medeiros, 811, Galo Branco",
+      "regiao": "Leste",
+      "horario": "Segunda a Sábado: 8h às 17h. Domingo: 8h às 12h.",
+      "observacoes": "Limite de 1m³ (um metro cúbico) para entulho e podas.",
+      "lat": -23.16782,
+      "lng": -45.79585,
+      "tipos": ["Entulho", "Gesso", "Móveis", "Equipamentos Domésticos", "Eletrônico", "Pilhas e Baterias", "Lâmpadas", "Poda e Jardinagem", "Madeira", "Pneus", "Óleo de Cozinha", "Recicláveis", "Espelho", "Têxteis", "Mídia"],
+      "nao_aceita": ["Lixo Orgânico", "Lixo Hospitalar", "Animais Mortos", "Químicos", "Terra e Areia"]
+    },
+    {
+      "nome": "PEV Novo Horizonte",
+      "endereco": "Avenida Tancredo Neves, 5630 (esq. com Rua dos Topógrafos), Novo Horizonte",
+      "regiao": "Leste",
+      "horario": "Segunda a Sábado: 8h às 17h. Domingo: 8h às 12h.",
+      "observacoes": "Limite de 1m³ (um metro cúbico) para entulho e podas.",
+      "lat": -23.16726,
+      "lng": -45.79585,
+      "tipos": ["Entulho", "Gesso", "Móveis", "Equipamentos Domésticos", "Eletrônico", "Pilhas e Baterias", "Lâmpadas", "Poda e Jardinagem", "Madeira", "Pneus", "Óleo de Cozinha", "Recicláveis", "Espelho", "Têxteis", "Mídia"],
+      "nao_aceita": ["Lixo Orgânico", "Lixo Hospitalar", "Animais Mortos", "Químicos", "Terra e Areia"]
+    },
+    {
+      "nome": "PEV Copacabana",
+      "endereco": "Rua Charles Diamond, 80 (em frente à Praça Joaquim Figueira), Jd. Copacabana",
+      "regiao": "Leste",
+      "horario": "Segunda a Sábado: 8h às 17h. Domingo: 8h às 12h.",
+      "observacoes": "Limite de 1m³ (um metro cúbico) para entulho e podas.",
+      "lat": -23.18025,
+      "lng": -45.78736,
+      "tipos": ["Entulho", "Gesso", "Móveis", "Equipamentos Domésticos", "Eletrônico", "Pilhas e Baterias", "Lâmpadas", "Poda e Jardinagem", "Madeira", "Pneus", "Óleo de Cozinha", "Recicláveis", "Espelho", "Têxteis", "Mídia"],
+      "nao_aceita": ["Lixo Orgânico", "Lixo Hospitalar", "Animais Mortos", "Químicos", "Terra e Areia"]
+    },
+    {
+      "nome": "PEV Pararangaba",
+      "endereco": "Avenida Sansão Peres de Andrade, 55, Jardim Califórnia",
+      "regiao": "Leste",
+      "horario": "Segunda a Sábado: 8h às 17h. Domingo: 8h às 12h.",
+      "observacoes": "Limite de 1m³ (um metro cúbico) para entulho e podas.",
+      "lat": -23.19532,
+      "lng": -45.83244,
+      "tipos": ["Entulho", "Gesso", "Móveis", "Equipamentos Domésticos", "Eletrônico", "Pilhas e Baterias", "Lâmpadas", "Poda e Jardinagem", "Madeira", "Pneus", "Óleo de Cozinha", "Recicláveis", "Espelho", "Têxteis", "Mídia"],
+      "nao_aceita": ["Lixo Orgânico", "Lixo Hospitalar", "Animais Mortos", "Químicos", "Terra e Areia"]
+    },
+    {
+      "nome": "PEV Urbanova (Eco-PEV)",
+      "endereco": "Avenida Dr. Dilson Lara, 80, Residencial Montserrat",
+      "regiao": "Oeste",
+      "horario": "Segunda a Sábado: 8h às 17h. Domingo: 8h às 12h.",
+      "observacoes": "Limite de 1m³ (um metro cúbico) para entulho e podas.",
+      "lat": -23.18341,
+      "lng": -45.95252,
+      "tipos": ["Entulho", "Gesso", "Móveis", "Equipamentos Domésticos", "Eletrônico", "Pilhas e Baterias", "Lâmpadas", "Poda e Jardinagem", "Madeira", "Pneus", "Óleo de Cozinha", "Recicláveis", "Espelho", "Têxteis", "Mídia"],
+      "nao_aceita": ["Lixo Orgânico", "Lixo Hospitalar", "Animais Mortos", "Químicos", "Terra e Areia"]
+    },
+    {
+      "nome": "PEV Santa Luzia - Putim",
+      "endereco": "Avenida Vicente Brandão Ferreira, 293, Santa Luzia",
+      "regiao": "Sudeste",
+      "horario": "Segunda a Sábado: 8h às 17h. Domingo: 8h às 12h.",
+      "observacoes": "Limite de 1m³ (um metro cúbico) para entulho e podas.",
+      "lat": -23.23722,
+      "lng": -45.83361,
+      "tipos": ["Entulho", "Gesso", "Móveis", "Equipamentos Domésticos", "Eletrônico", "Pilhas e Baterias", "Lâmpadas", "Poda e Jardinagem", "Madeira", "Pneus", "Óleo de Cozinha", "Recicláveis", "Espelho", "Têxteis", "Mídia"],
+      "nao_aceita": ["Lixo Orgânico", "Lixo Hospitalar", "Animais Mortos", "Químicos", "Terra e Areia"]
+    },
+    {
+      "nome": "PEV Altos de Santana",
+      "endereco": "Avenida Alto do Rio Doce, 1075 (ao lado da EMEF Vera Babo de Oliveira)",
+      "regiao": "Norte",
+      "horario": "Segunda a Sábado: 8h às 17h. Domingo: 8h às 12h.",
+      "observacoes": "Limite de 1m³ (um metro cúbico) para entulho e podas.",
+      "lat": -23.16011,
+      "lng": -45.89955,
+      "tipos": ["Entulho", "Gesso", "Móveis", "Equipamentos Domésticos", "Eletrônico", "Pilhas e Baterias", "Lâmpadas", "Poda e Jardinagem", "Madeira", "Pneus", "Óleo de Cozinha", "Recicláveis", "Espelho", "Têxteis", "Mídia"],
+      "nao_aceita": ["Lixo Orgânico", "Lixo Hospitalar", "Animais Mortos", "Químicos", "Terra e Areia"]
+    },
+    {
+      "nome": "PEV Vila Jaci",
+      "endereco": "Rua Xavantes, 367, Vila Jaci",
+      "regiao": "Norte",
+      "horario": "Segunda a Sábado: 8h às 17h. Domingo: 8h às 12h.",
+      "observacoes": "Limite de 1m³ (um metro cúbico) para entulho e podas.",
+      "lat": -23.17088,
+      "lng": -45.88501,
+      "tipos": ["Entulho", "Gesso", "Móveis", "Equipamentos Domésticos", "Eletrônico", "Pilhas e Baterias", "Lâmpadas", "Poda e Jardinagem", "Madeira", "Pneus", "Óleo de Cozinha", "Recicláveis", "Espelho", "Têxteis", "Mídia"],
+      "nao_aceita": ["Lixo Orgânico", "Lixo Hospitalar", "Animais Mortos", "Químicos", "Terra e Areia"]
+    },
+    {
+      "nome": "PEV Martins Pereira",
+      "endereco": "Rua Ana Gonçalves da Cunha, 370 (ao lado do estádio), Vila Industrial",
+      "regiao": "Centro",
+      "horario": "Segunda a Sábado: 8h às 17h. Domingo: 8h às 12h.",
+      "observacoes": "Limite de 1m³ (um metro cúbico) para entulho e podas.",
+      "lat": -23.19163,
+      "lng": -45.87781,
+      "tipos": ["Entulho", "Gesso", "Móveis", "Equipamentos Domésticos", "Eletrônico", "Pilhas e Baterias", "Lâmpadas", "Poda e Jardinagem", "Madeira", "Pneus", "Óleo de Cozinha", "Recicláveis", "Espelho", "Têxteis", "Mídia"],
+      "nao_aceita": ["Lixo Orgânico", "Lixo Hospitalar", "Animais Mortos", "Químicos", "Terra e Areia"]
+    }
+  ]
+}

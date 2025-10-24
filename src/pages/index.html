@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-ColetaSJC</title>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <img src="../assets/logo.svg" alt="Logo E-ColetaSJC">
+    </header>
+
+    <main class="homepage-content">
+        <div class="placeholder-image">
+            <img src="../assets/simbolo lixo.svg" alt="Símbolo de reciclagem">
+        </div>
+        
+        <h1>Descartar não precisa ser difícil</h1>
+        <p class="subtitle">Descubra a nova <b>solução</b> para <b>descartar</b> da melhor forma em <b>São José dos Campos</b></p>
+
+        <label for="btn-comecar" class="label-comecar">Conheça mais:</label>
+        <button id="btn-comecar" class="btn btn-green">Começar</button>
+    </main>
+
+    <div id="modal-sheet">
+        <div id="modal-handle">
+            <div class="handle-bar"></div>
+        </div>
+
+        <div class="modal-content">
+
+            <div class="modal-view" id="view-options">
+                <p class="modal-title">De que forma deseja descartar Hoje?</p>
+                <div class="option-block">
+                    <label>Responda um formulário e saiba como descartar corretamente:</label>
+                    <button id="btn-show-planejamento" class="btn btn-full">Planejamento</button>
+                </div>
+                <div class="option-block">
+                    <label>Faça busca com filtros de locais de descarte:</label>
+                    <button id="btn-show-buscar" class="btn btn-full">Buscar Locais</button>
+                </div>
+            </div>
+
+            <div class="modal-view hidden" id="view-planejamento-form">
+                <h2 class="view-title">Planejamento</h2>
+                <form id="form-planejamento" class="form-layout">
+                    <div class="form-group">
+                        <label for="itens">O que quer descartar?</label>
+                        <input type="text" id="itens" placeholder="Separe por vírgulas...">
+                        
+                        <div class="shortcuts">
+                            <button type="button" class="shortcut-btn">Plástico</button>
+                            <button type="button" class="shortcut-btn">Metal</button>
+                            <button type="button" class="shortcut-btn">Entulho</button>
+                            <button type="button" class="shortcut-btn">Eletrônico</button>
+                            <button type="button" class="shortcut-btn">Medicamento</button>
+                            <button type="button" class="shortcut-btn">Móveis</button>
+                            <button type="button" class="shortcut-btn">Poda/Jardim</button>
+                            <button type="button" class="shortcut-btn">Pneus</button>
+                            <button type="button" class="shortcut-btn">Óleo de Cozinha</button>
+                            <button type="button" class="shortcut-btn">Roupas/Têxteis</button>
+                            <button type="button" class="shortcut-btn">Gesso</button>
+                            <button type="button" class="shortcut-btn">Lâmpadas</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="kilos">Quantos Kilos aproximadamente?</label>
+                        <input type="text" id="kilos" placeholder="Digite aqui...">
+                    </div>
+                    <div class="form-group">
+                        <label for="bairro">Que bairro de SJC você mora?</label>
+                        
+                        <select id="bairro">
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="altos-de-santana">Altos de Santana</option>
+                            <option value="bosque-dos-eucaliptos">Bosque dos Eucaliptos</option>
+                            <option value="bosque-imperial">Bosque Imperial</option>
+                            <option value="campo-dos-alemaes">Campo dos Alemães</option>
+                            <option value="campos-de-sao-jose">Campos de São José</option>
+                            <option value="centro">Centro</option>
+                            <option value="chacara-serimbura">Chácara Serimbura</option>
+                            <option value="chacaras-reunidas">Chácaras Reunidas</option>
+                            <option value="dom-pedro-i">Dom Pedro I</option>
+                            <option value="eugenio-de-melo">Eugênio de Melo</option>
+                            <option value="floradas-de-sao-jose">Floradas de São José</option>
+                            <option value="galo-branco">Galo Branco</option>
+                            <option value="jardim-alvorada">Jardim Alvorada</option>
+                            <option value="jardim-america">Jardim América</option>
+                            <option value="jardim-apolo">Jardim Apolo</option>
+                            <option value="jardim-aquarius">Jardim Aquarius</option>
+                            <option value="jardim-cerejeiras">Jardim Cerejeiras</option>
+                            <option value="jardim-copacabana">Jardim Copacabana</option>
+                            <option value="jardim-das-colinas">Jardim das Colinas</option>
+                            <option value="jardim-das-industrias">Jardim das Indústrias</option>
+                            <option value="jardim-do-golfe">Jardim do Golfe</option>
+                            <option value="jardim-esplanada">Jardim Esplanada</option>
+                            <option value="jardim-imperial">Jardim Imperial</option>
+                            <option value="jardim-morumbi">Jardim Morumbi</option>
+                            <option value="jardim-oriente">Jardim Oriente</option>
+                            <option value="jardim-pararangaba">Jardim Pararangaba</option>
+                            <option value="jardim-paulista">Jardim Paulista</option>
+                            <option value="jardim-portugal">Jardim Portugal</option>
+                            <option value="jardim-santa-ines">Jardim Santa Inês</option>
+                            <option value="jardim-sao-dimas">Jardim São Dimas</option>
+                            <option value="jardim-satelite">Jardim Satélite</option>
+                            <option value="jardim-telecom">Jardim Telecom</option>
+                            <option value="jardim-vale-do-sol">Jardim Vale do Sol</option>
+                            <option value="jardim-valparaiba">Jardim Valparaíba</option>
+                            <option value="monte-castelo">Monte Castelo</option>
+                            <option value="novo-horizonte">Novo Horizonte</option>
+                            <option value="parque-dos-eucaliptos">Parque dos Eucaliptos</option>
+                            <option value="parque-industrial">Parque Industrial</option>
+                            <option value="parque-interlagos">Parque Interlagos</option>
+                            <option value="parque-novo-horizonte">Parque Novo Horizonte</option>
+                            <option value="putim">Putim</option>
+                            <option value="residencial-uniao">Residencial União</option>
+                            <option value="santana">Santana</option>
+                            <option value="urbanova">Urbanova</option>
+                            <option value="vila-adyana">Vila Adyana</option>
+                            <option value="vila-ema">Vila Ema</option>
+                            <option value="vila-industrial">Vila Industrial</option>
+                            <option value="vila-maria">Vila Maria</option>
+                            <option value="vila-rubi">Vila Rubi</option>
+                            <option value="vila-tatetuba">Vila Tatetuba</option>
+                            <option value="vila-tesouro">Vila Tesouro</option>
+                            <option value="vista-verde">Vista Verde</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-dark-green btn-full">Enviar</button>
+                </form>
+            </div>
+
+            <div class="modal-view hidden" id="view-planejamento-resultado">
+                <h2 class="view-title">Planejamento</h2>
+                <div class="resultado-content">
+                    <p><strong>Coleta de reciclável no seu bairro em:</strong></p>
+                    <div class="coleta-info">
+                        <h3 id="resultado-coleta-dias"></h3>
+                        <p id="resultado-coleta-horario" class="coleta-horario"></p>
+                        <a href="#" class="coleta-link">Como Separar o Lixo Corretamente ↗</a>
+                    </div>
+                    
+                    <p id="resultado-itens-titulo"><strong>Descarte de Itens Específicos:</strong></p>
+                    
+                    <div class="map-container">
+                        <div id="mapa-planejamento"></div>
+                    </div>
+                    
+                    <button id="btn-gerar-rota" class="btn btn-green btn-full btn-rota">
+                        Gerar trajeto com Google Maps ↗
+                    </button>
+                </div>
+            </div>
+            
+            <div class="modal-view hidden" id="view-buscar-locais-form">
+                <h2 class="view-title">Buscar Locais</h2>
+                <form id="form-buscar" class="form-layout">
+                    
+                    <input type="hidden" id="filtro-tipo-lixo" value="">
+
+                    <div class="form-group">
+                        <label>Que tipo de lixo quer descartar? (selecione 1)</label>
+                        
+                        <div class="shortcuts">
+                            <button type="button" class="shortcut-btn" data-filtro="Recicláveis">Plástico</button>
+                            <button type="button" class="shortcut-btn" data-filtro="Recicláveis">Metal</button>
+                            <button type="button" class="shortcut-btn" data-filtro="Entulho">Entulho</button>
+                            <button type="button" class="shortcut-btn" data-filtro="Eletrônico">Eletrônico</button>
+                            <button type="button" class="shortcut-btn" data-filtro="Pilhas e Baterias">Medicamento</button>
+                            <button type="button" class="shortcut-btn" data-filtro="Móveis">Móveis</button>
+                            <button type="button" class="shortcut-btn" data-filtro="Poda e Jardinagem">Poda/Jardim</button>
+                            <button type="button" class="shortcut-btn" data-filtro="Pneus">Pneus</button>
+                            <button type="button" class="shortcut-btn" data-filtro="Óleo de Cozinha">Óleo de Cozinha</button>
+                            <button type="button" class="shortcut-btn" data-filtro="Têxteis">Roupas/Têxteis</button>
+                            <button type="button" class="shortcut-btn" data-filtro="Gesso">Gesso</button>
+                            <button type="button" class="shortcut-btn" data-filtro="Lâmpadas">Lâmpadas</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bairro-busca">Qual o seu bairro? (opcional)</label>
+                        
+                        <select id="bairro-busca">
+                            <option value="" disabled selected>Selecione (Todos)</option>
+                            <option value="altos-de-santana">Altos de Santana</option>
+                            <option value="bosque-dos-eucaliptos">Bosque dos Eucaliptos</option>
+                            <option value="bosque-imperial">Bosque Imperial</option>
+                            <option value="campo-dos-alemaes">Campo dos Alemães</option>
+                            <option value="campos-de-sao-jose">Campos de São José</option>
+                            <option value="centro">Centro</option>
+                            <option value="chacara-serimbura">Chácara Serimbura</option>
+                            <option value="chacaras-reunidas">Chácaras Reunidas</option>
+                            <option value="dom-pedro-i">Dom Pedro I</option>
+                            <option value="eugenio-de-melo">Eugênio de Melo</option>
+                            <option value="floradas-de-sao-jose">Floradas de São José</option>
+                            <option value="galo-branco">Galo Branco</option>
+                            <option value="jardim-alvorada">Jardim Alvorada</option>
+                            <option value="jardim-america">Jardim América</option>
+                            <option value="jardim-apolo">Jardim Apolo</option>
+                            <option value="jardim-aquarius">Jardim Aquarius</option>
+                            <option value="jardim-cerejeiras">Jardim Cerejeiras</option>
+                            <option value="jardim-copacabana">Jardim Copacabana</option>
+                            <option value="jardim-das-colinas">Jardim das Colinas</option>
+                            <option value="jardim-das-industrias">Jardim das Indústrias</option>
+                            <option value="jardim-do-golfe">Jardim do Golfe</option>
+                            <option value="jardim-esplanada">Jardim Esplanada</option>
+                            <option value="jardim-imperial">Jardim Imperial</option>
+                            <option value="jardim-morumbi">Jardim Morumbi</option>
+                            <option value="jardim-oriente">Jardim Oriente</option>
+                            <option value="jardim-pararangaba">Jardim Pararangaba</option>
+                            <option value="jardim-paulista">Jardim Paulista</option>
+                            <option value="jardim-portugal">Jardim Portugal</option>
+                            <option value="jardim-santa-ines">Jardim Santa Inês</option>
+                            <option value="jardim-sao-dimas">Jardim São Dimas</option>
+                            <option value="jardim-satelite">Jardim Satélite</option>
+                            <option value="jardim-telecom">Jardim Telecom</option>
+                            <option value="jardim-vale-do-sol">Jardim Vale do Sol</option>
+                            <option value="jardim-valparaiba">Jardim Valparaíba</option>
+                            <option value="monte-castelo">Monte Castelo</option>
+                            <option value="novo-horizonte">Novo Horizonte</option>
+                            <option value="parque-dos-eucaliptos">Parque dos Eucaliptos</option>
+                            <option value="parque-industrial">Parque Industrial</option>
+                            <option value="parque-interlagos">Parque Interlagos</option>
+                            <option value="parque-novo-horizonte">Parque Novo Horizonte</option>
+                            <option value="putim">Putim</option>
+                            <option value="residencial-uniao">Residencial União</option>
+                            <option value="santana">Santana</option>
+                            <option value="urbanova">Urbanova</option>
+                            <option value="vila-adyana">Vila Adyana</option>
+                            <option value="vila-ema">Vila Ema</option>
+                            <option value="vila-industrial">Vila Industrial</option>
+                            <option value="vila-maria">Vila Maria</option>
+                            <option value="vila-rubi">Vila Rubi</option>
+                            <option value="vila-tatetuba">Vila Tatetuba</option>
+                            <option value="vila-tesouro">Vila Tesouro</option>
+                            <option value="vista-verde">Vista Verde</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-dark-green btn-full">Buscar</button>
+                </form>
+            </div>
+
+            <div class="modal-view hidden" id="view-buscar-locais-resultado">
+                <h2 class="view-title">Locais Encontrados</h2>
+                
+                <div class="map-container">
+                    <div id="mapa-busca"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBmyeLT2ap2yo5Y7grVrp59GBP54O-5vU&loading=async&callback=initApp"
+        async
+    ></script>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
